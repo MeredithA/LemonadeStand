@@ -6,17 +6,19 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Weather
+    class WeatherForcast
     {
         // member variables (HAS A)
-
+        //randomizedDailyForcast
 
         // constructor (SPAWNER)
-        public Weather()
+        public WeatherForcast()
         {
 
         }
 
         // member methods (CAN DO)
+        //SetDailyForcast
+            //randomized daily forcast
     }
 }

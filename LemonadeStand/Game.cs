@@ -13,26 +13,21 @@ namespace LemonadeStand
 
 
         // constructor ()
+        public Game()
+        {
+
+        }
 
 
         //member methods (CAN DO)
-        public void RunGme()
-        {
-            //Weather
-                 //dailyForcat - (DisplayDailyForcast)
-                 // Weekly Forcast - (DisplayWeeklyForcast
 
-                    //SetPrice per cup - (SetPriceBasedOnWeather)
+
                  
              //player(BONUS SECOND PLAYER)
                 //NameOfStand
 
-              //ChangeRecipe
-                //lemons
-                //sugar
-                //ice
-
              // Customer {make list?}     (each customer separate object)
+             // 
                                         //their own chance of buyins a glass
                                         //so thathow much lemonade's purchased
                                         //how much their willing to pay (vary form CX to CX)
@@ -43,12 +38,9 @@ namespace LemonadeStand
             //loop at least 7 times  (((option to choose (7, 14, 21 days)
 
             // Retire or Start over
-        }
 
-        public void CreateRecipe()
-        {
 
-        }
+
 
     }
 }

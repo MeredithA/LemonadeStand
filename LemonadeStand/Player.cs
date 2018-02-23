@@ -8,18 +8,20 @@ namespace LemonadeStand
 {
     class Player
     {
-        //member variables (HAS A)
+        // member variables (HAS A)
+        //nameOfLemonadeStand
+        //game net income
+        //an inventory
 
+ 
 
+        // constructor (SPAWNER)
+        public Player()
+        {
 
+        }
 
-        // constructor ()
-
-
-
-
-        //member methods (CAN DO)
-
-
+        // member methods (CAN DO)
+        //SetnameOfLemonadeStand
     }
 }

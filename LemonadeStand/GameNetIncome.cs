@@ -6,17 +6,21 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Weather
+    class GameNetIncome
     {
         // member variables (HAS A)
+        //totaly net income
 
 
         // constructor (SPAWNER)
-        public Weather()
+        public GameNetIncome()
         {
 
         }
 
         // member methods (CAN DO)
+
+        //getOverallNetIncome
+            //overall/ debits - overall credits
     }
 }

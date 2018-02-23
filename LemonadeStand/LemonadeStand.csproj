@@ -43,8 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualWeather.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="DailyCredits.cs" />
+    <Compile Include="DailyDebits.cs" />
+    <Compile Include="DailyIncome.cs" />
+    <Compile Include="DailyNetIncome.cs" />
+    <Compile Include="Day.cs" />
+    <Compile Include="GameNetIncome.cs" />
+    <Compile Include="LemonadeRecipe.cs" />
+    <Compile Include="LemonadePrice.cs" />
+    <Compile Include="Store.cs" />
+    <Compile Include="WeatherForcast.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Inventory.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI.cs" />
+    <Compile Include="Weather.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

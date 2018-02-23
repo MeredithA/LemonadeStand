@@ -6,18 +6,17 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Profit
+    class Store
     {
-        //member variables (HAS A)
+        // member variables (HAS A)
 
 
+        // constructor (SPAWNER)
+        public Store()
+        {
 
+        }
 
-        // constructor ()
-
-
-
-
-        //member methods (CAN DO)
+        // member methods (CAN DO)
     }
 }

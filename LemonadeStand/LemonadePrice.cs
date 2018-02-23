@@ -6,17 +6,20 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Weather
+    class LemonadePrice
     {
         // member variables (HAS A)
-
+        //dailyLemonadePrice
 
         // constructor (SPAWNER)
-        public Weather()
+        public LemonadePrice()
         {
 
         }
 
         // member methods (CAN DO)
+
+        //SetDailyLemonadePrice
+            //user input
     }
 }

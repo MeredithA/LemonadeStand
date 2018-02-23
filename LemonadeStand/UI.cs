@@ -6,17 +6,26 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Weather
+    class UI
     {
         // member variables (HAS A)
 
 
         // constructor (SPAWNER)
-        public Weather()
+        public UI()
         {
 
         }
 
         // member methods (CAN DO)
+        //displayInstructions
+        //DisplayDailyForcast
+        //DisplayWeeklyForcast
+        //display game net income
+        //display items to purchase w/prices
+
+        //Customer info
+        //
+
     }
 }

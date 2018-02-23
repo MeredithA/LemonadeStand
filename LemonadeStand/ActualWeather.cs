@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Weather
+    class ActualWeather
     {
         // member variables (HAS A)
+        //actualy weather
 
 
         // constructor (SPAWNER)
-        public Weather()
+        public ActualWeather()
         {
+            //randomized number
 
         }
 
