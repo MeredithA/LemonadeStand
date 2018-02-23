@@ -8,7 +8,7 @@ namespace LemonadeStand
 {
     class Cups : 
     {
-            {
+
         // member variables (HAS A)
 
 

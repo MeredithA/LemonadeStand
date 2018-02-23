@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Inventory
+   class Inventory
     {
         // member variables (HAS A)
-
+         //list of each item        //select certain recipe
+                    
 
         // constructor (SPAWNER)
         public Inventory()

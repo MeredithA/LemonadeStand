@@ -6,22 +6,42 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Player
+    abstract class Player
     {
-        // member variables (HAS A)
-        //nameOfLemonadeStand
-        //game net income
-        //an inventory
+        // member variables (HAS A) 
+        public string nameOfLemonadeStand;
+        double wallet;
+        public string inventory;
+        public string recipe;
+
+
+       public double dailyPriceOfLemonade; 
+        //a recipe
+        public string dailyRecipe;
+
+        //cutomer approval?
+
 
  
 
         // constructor (SPAWNER)
         public Player()
         {
+            double.Player.wallet = 20;
+
+            
 
         }
 
         // member methods (CAN DO)
-        //SetnameOfLemonadeStand
+        public abstract void setNameOfLemonadeStand()
+        public abstract void getInventory()
+
+
+
+
+        double wallet;
+        public string inventory;
+        public string recipe;
     }
 }

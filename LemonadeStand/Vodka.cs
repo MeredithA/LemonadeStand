@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Vodka : Inventory
+    class Vodka : 
     {
         // member variables (HAS A)
-
+        //end of dayamount of lemons
+        //qty to buy
+        //price per qty
 
         // constructor (SPAWNER)
         public Vodka()
@@ -18,5 +20,6 @@ namespace LemonadeStand
         }
 
         // member methods (CAN DO)
+        // purchase lemons
     }
 }

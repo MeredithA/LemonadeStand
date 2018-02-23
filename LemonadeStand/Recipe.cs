@@ -6,21 +6,27 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class GameNetIncome
+    class Recipe
     {
-        // member variables (HAS A)
-        //totaly net income
+
+        //create recipe
+        //set price
+        //how many lemons
+        //hw many ice cubes
+        //how much sugar
+        //how much vodka
+
+            //set recipe
 
 
         // constructor (SPAWNER)
-        public GameNetIncome()
+        public Recipe()
         {
 
         }
 
         // member methods (CAN DO)
-
-        //getOverallNetIncome
-            //overall/ debits - overall credits
     }
 }
+
+// member methods (CAN DO)

@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class LemonadePrice
+    class Human : Player
     {
         // member variables (HAS A)
-        //dailyLemonadePrice
-
+        nameOFLemonadeStand;
         // constructor (SPAWNER)
-        public LemonadePrice()
+        public Human()
         {
 
         }
 
         // member methods (CAN DO)
-
-        //SetDailyLemonadePrice
-            //user input
+        public override void SetLemonadesStandName()
+        {
+            Console.WriteLine("Please enter your name:");
+            name = Console.ReadLine();
+        }
     }
 }

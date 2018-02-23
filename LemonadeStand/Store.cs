@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Store
+    class Store : Player
     {
         // member variables (HAS A)
-
+            //display price and qty of each item
+            //parent child
+            //check out to take from money
 
         // constructor (SPAWNER)
         public Store()

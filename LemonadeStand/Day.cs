@@ -9,19 +9,25 @@ namespace LemonadeStand
     class Day
     {
         // member variables (HAS A)
-            //actual weather
-            //weatherforcast
-            //daily net income
-            //running net income
-            //lemonade recipe
-
+        public Weather tomorrowsForcast;
+        public Weather todaysWeather;
+        double lemonadePrice;
+        public Recipe lemonadeRecipe;
+        public string purchaseInventory;
+        public Random random;
 
         // constructor (SPAWNER)
         public Day()
         {
-
+            random = new Random();
+            tomorrowsForcast = new Weather();
+            todaysWeather = new Weather();
+            lemonadeRecipe = new Recipe();
+            lemonadePrice =new lemon
         }
 
         // member methods (CAN DO)
+            //the shit we did today for set and grab (setting and getting)
+
     }
 }
