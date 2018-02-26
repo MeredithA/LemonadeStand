@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    abstract class Computer : Player
+    class Computer : Player
     {
         // member variables (HAS A)
             //name of stand
@@ -18,8 +18,17 @@ namespace LemonadeStand
                 
         }
 
+        public override void getInventory()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void setNameOfLemonadeStand()
+        {
+            throw new NotImplementedException();
+        }
+
         // member methods (CAN DO)
-        public abstract void 
-        public abstract void 
+
     }
 }

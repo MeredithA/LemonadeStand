@@ -13,6 +13,7 @@ namespace LemonadeStand
         private int temperature;
         private List<string> weatherConditionPossibilities;
         private List<string> actualWeatherConditions;
+        private Random random
         //how to get forcast
         //how to get a actual forcast
         //make list with nice weather and cold weather then make list of forcast

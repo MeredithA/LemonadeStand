@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Sugar
+    class Sugar : Items
     {
         // member variables (HAS A)
             //end of day amount of sugar

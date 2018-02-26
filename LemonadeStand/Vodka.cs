@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Vodka : 
+    class Vodka : Items
     {
         // member variables (HAS A)
         //end of dayamount of lemons

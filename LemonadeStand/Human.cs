@@ -9,7 +9,9 @@ namespace LemonadeStand
     class Human : Player
     {
         // member variables (HAS A)
-        nameOFLemonadeStand;
+        private string nameOfLemonadeStand;
+
+
         // constructor (SPAWNER)
         public Human()
         {

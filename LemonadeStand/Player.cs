@@ -11,26 +11,17 @@ namespace LemonadeStand
         // member variables (HAS A) 
         public string nameOfLemonadeStand;
         double wallet;
+        double profit;
+        double expenses;
+        double income;
         public string inventory;
-        public string recipe;
+        private Wallet wallet;
 
-
-       public double dailyPriceOfLemonade; 
-        //a recipe
-        public string dailyRecipe;
-
-        //cutomer approval?
-
-
- 
 
         // constructor (SPAWNER)
         public Player()
         {
-            double.Player.wallet = 20;
-
-            
-
+            double wallet  = 20;
         }
 
         // member methods (CAN DO)

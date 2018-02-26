@@ -6,18 +6,20 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Customer
+    class Customer : Player
     {
         // member variables (HAS A)
-
+        public int currentItmsInInventory;
+        
 
         // constructor (SPAWNER)
         public Customer()
         {
-
+            
         }
 
         // member methods (CAN DO)
+
 
         //Customer objects chance of buying
         //how much lemonade was purchased by each customer object

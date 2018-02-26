@@ -11,8 +11,10 @@ namespace LemonadeStand
         // member variables (HAS A)
         public Weather tomorrowsForcast;
         public Weather todaysWeather;
-        double lemonadePrice;
-        public Recipe lemonadeRecipe;
+        private Weather weather;
+        double LemonadePrice;
+        private Recipe recipe;
+        private List<string> availableItems;
         public string purchaseInventory;
         public Random random;
 
