@@ -9,8 +9,6 @@ namespace LemonadeStand
     class Human : Player
     {
         // member variables (HAS A)
-        private string nameOfLemonadeStand;
-
 
         // constructor (SPAWNER)
         public Human()
@@ -19,10 +17,18 @@ namespace LemonadeStand
         }
 
         // member methods (CAN DO)
-        public override void SetLemonadesStandName()
+
+        public string GetLemonadeStandName()
         {
             Console.WriteLine("Please enter your name:");
-            name = Console.ReadLine();
+            string name = Console.ReadLine();
+            return name;
+            
+        }
+
+        public int getInventory()
+        {
+            return 1;
         }
     }
 }

@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Ice : Item
+    class Cup : Item
     {
-        public double priceOf100IceCubes;
-        public double priceOf200IceCubes;
-        public double priceOf300IceCubes;
+        public double priceOf25Cups;
+        public double priceOf50Cups;
+        public double priceOf100Cups;
+
 
         // constructor (SPAWNER)
         public Cup()
         {
-            priceOf100IceCubes = 0.86;
-            priceOf200IceCubes = 2.21;
-            priceOf300IceCubes = 3.79;
+            priceOf25Cups = 0.91;
+            priceOf50Cups = 1.68;
+            priceOf100Cups = 3.04;
         }
 
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Recipe
+    class LemonadeRecipe
     {
 
         //create recipe
@@ -20,7 +20,7 @@ namespace LemonadeStand
 
 
         // constructor (SPAWNER)
-        public Recipe()
+        public LemonadeRecipe()
         {
 
         }

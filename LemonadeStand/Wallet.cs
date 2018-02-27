@@ -9,12 +9,16 @@ namespace LemonadeStand
     class Wallet
     {
         // member variables (HAS A)
+        private double Money;
+
         //money made that day
         //runnings monies
+        /// withdraw monies
 
         // constructor (SPAWNER)
         public Wallet()
         {
+            double player.wallet = 20;
 
         }
 

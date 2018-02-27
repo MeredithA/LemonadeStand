@@ -9,32 +9,35 @@ namespace LemonadeStand
     class Weather
     {
         // member variables (HAS A)
-        private string condition;
-        private int temperature;
-        private List<string> weatherConditionPossibilities;
-        private List<string> actualWeatherConditions;
-        private Random random
-        //how to get forcast
-        //how to get a actual forcast
-        //make list with nice weather and cold weather then make list of forcast
-
+        public string actualWeathercondition;
+        public int actualTemperature;
+        public List<string> weatherConditionPossibilities;
+        public List<int> weatherTempuraturePossibilities;
+        public Random random;
 
         // constructor (SPAWNER)
         public Weather()
         {
-            //random pick weather  //posibly in gameclass
-            
+            weatherConditionPossibilities = new List<string>() { "sunny", "overcast", "rain", "cloudy", "hazy" };
+            weatherTempuraturePossibilities = new List<int>() { 87, 75, 66, 50, 67, 91 };
+            random = new Random();
         }
 
         // member methods (CAN DO)
-        public void SetForecast()
+        public int getActualTempurature()
         {
+            int actualTemperature;
 
+            actualTemperature = random.Next(0, weatherConditionPossibilities.Count);
+            return weatherTempuraturePossibilities[actualTemperature];
         }
 
-        public void SetWeather()
+        public string GetActualyWeatherCondition()
         {
+            int actualWeatherConditions;
 
+            actualWeatherConditions = random.Next(0, weatherConditionPossibilities.Count);
+            return weatherConditionPossibilities[actualWeatherConditions];
         }
     }
 }

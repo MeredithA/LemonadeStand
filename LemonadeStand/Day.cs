@@ -11,9 +11,9 @@ namespace LemonadeStand
         // member variables (HAS A)
         public Weather tomorrowsForcast;
         public Weather todaysWeather;
-        private Weather weather;
         double LemonadePrice;
-        private Recipe recipe;
+        private LemonadeRecipe recipe;
+        private Customer customer;
         private List<string> availableItems;
         public string purchaseInventory;
         public Random random;
@@ -24,12 +24,10 @@ namespace LemonadeStand
             random = new Random();
             tomorrowsForcast = new Weather();
             todaysWeather = new Weather();
-            lemonadeRecipe = new Recipe();
-            lemonadePrice =new lemon
+            recipe = new LemonadeRecipe();
         }
 
         // member methods (CAN DO)
             //the shit we did today for set and grab (setting and getting)
-
     }
 }

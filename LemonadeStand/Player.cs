@@ -9,30 +9,42 @@ namespace LemonadeStand
     abstract class Player
     {
         // member variables (HAS A) 
-        public string nameOfLemonadeStand;
-        double wallet;
+        public string GetLemonadesStandName;
+        //public string PurchaseInventory;
+        
         double profit;
         double expenses;
         double income;
-        public string inventory;
+        public double money;
+        public double moneyForStore;
+        public Inventory inventory;
         private Wallet wallet;
+        public int numberOfItemsBought;
 
 
         // constructor (SPAWNER)
         public Player()
         {
-            double wallet  = 20;
+        numberOfItemsBought = 0;
+        moneyForStore = 20.00;
+
+        inventory.playersCups = 0;
+        inventory.playersIce = 0;
+        inventory.playersSugar = 0;
+        inventory.playersLemons = 0;
         }
 
         // member methods (CAN DO)
-        public abstract void setNameOfLemonadeStand()
-        public abstract void getInventory()
+        public void PurchaseInventory()
+        {
 
-
-
-
-        double wallet;
-        public string inventory;
-        public string recipe;
+        }
+        public void DisplayPlayerInventory()
+        {
+            Console.WriteLine("Cups: {0}", inventory.playersCups);
+            Console.WriteLine("Ice: {0}", inventory.playersIce);
+            Console.WriteLine("Sugar: {0}", inventory.playersSugar);
+            Console.WriteLine("Lemons: {0}", inventory.playersLemons);
+        }
     }
 }
