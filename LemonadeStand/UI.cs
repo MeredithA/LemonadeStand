@@ -9,39 +9,22 @@ namespace LemonadeStand
     class UI
     {
         // member variables (HAS A)
-
-        //DisplayGameRules;
-        //DisplayPlayerInventory()
-
-
         // constructor (SPAWNER)
         public UI()
         {
 
         }
-
         // member methods (CAN DO)
- //       DisplayGameRules{
-//
- //       "Instructions:
- //       Your goal is to make as much money as you can in 7 days.
-   //     Buy cups, lemons, vodka, sugar and ice cubes. Then set
-     //       your recipe based on the weather and conditions.
-       //     Set your price and sell your lemaade at the stand.
-         //   Try changin up the price based on the weather conditions
-     //       as well. At the end of the game, you'll see how much mone
-       //     you made."
-       //  "
 
-
+        public void DisplayRules()
+        {
+            Console.WriteLine("Welcome to Lemonade Stand.");
+            Console.WriteLine("Instructions:");
+            Console.WriteLine("Your goal is to make as much money as you can in 7 days.");
+            Console.WriteLine("Buy cups, lemons, sugar and ice cubes. Then set your recipe every day.");
+            Console.WriteLine("Pay close attention to the weather and customer satisfaction.");
+            Console.WriteLine("Please hit [ENTER] to continue.");
+            Console.ReadLine();
         }
-        //displayInstructions
-        //DisplayDailyForcast
-        //DisplayWeeklyForcast
-        //display game net income
-        //display items to purchase w/prices
-
-        //Customer info
-        //
-
     }
+}

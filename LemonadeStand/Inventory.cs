@@ -15,7 +15,7 @@ namespace LemonadeStand
         public List<Cup> playersCups;
 
         // constructor (SPAWNER)
-        private Inventory()
+        public Inventory()
         {
             playersLemons = new List<Lemon>();
             playersSugar = new List<Sugar>();

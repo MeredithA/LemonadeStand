@@ -13,7 +13,6 @@ namespace LemonadeStand
         // constructor (SPAWNER)
         public Human()
         {
-
         }
 
         // member methods (CAN DO)
@@ -23,7 +22,6 @@ namespace LemonadeStand
             Console.WriteLine("Please enter your name:");
             string name = Console.ReadLine();
             return name;
-            
         }
 
         public int getInventory()

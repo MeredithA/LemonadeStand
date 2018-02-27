@@ -9,46 +9,50 @@ namespace LemonadeStand
     class Game
     {
         // member variables (HAS A)
-        private UI UI;
-        private Player playerOne;
-        private Player playerTwo;        
-        private Day day;
-        private Store store;
-        private Item items;
-        private Lemon lemons;
-        private Sugar sugar;
-        private Ice ice;
-        private Cup cups;
-        
+        public Random random;
+        public Weather weather;
+        public Player player;
+        public Store store;
+        public Day day;
+        public UI ui;
 
         // constructor ()
         public Game()
         {
-            playerOne = new Human();
-            playerTwo = new Computer();
- /*           availableItems = new List<string>() { "Lemons", "Sugar", "Vodka", "Cups", "Ice" };
             random = new Random();
-            // lengthOfGame?
+            weather = new Weather();
+            player = new Player();
+            store = new Store();
+            day = new Day();
+            ui = new UI();
         }
-
-
         //member methods (CAN DO)
+
         public void RunGame()
         {
-     //       bool willPlayAgain = AskToPlayAgain();
-            if (willPlayAgain)
-            {
-                RunGame();
-            }
+            UI.DisplayRules();
+            day.todaysForcast.ActualWeatherCondition();
+            day.todaysTempurature.ActualWeatherTemperature();
+            day.PriceOfCup();
         }
 
-        private void SetUpGame()
+        public void RestartGame()
         {
-            UI.DisplayGameRules();
-            // playerTwo = DetermineOpponentType();
-            playerOne.SetName();
-            // playerTwo.SetName();
-  */      }
-       
+            Console.WriteLine("Would you like to replay the game? Type 'yes' or 'no'.");
+            string answer = Console.ReadLine().ToUpper();
+            switch (answer)
+            {
+                case "yes":
+                    RunGame();
+                    break;
+                case "no":
+                    Environment.Exit(0);
+                    break;
+                default:
+                    Console.WriteLine("Invalaid entry.");
+                    break;
+
+            }
+        }
     }
 }

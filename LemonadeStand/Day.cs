@@ -9,25 +9,46 @@ namespace LemonadeStand
     class Day
     {
         // member variables (HAS A)
-        public Weather tomorrowsForcast;
-        public Weather todaysWeather;
-        double LemonadePrice;
-        private LemonadeRecipe recipe;
+        LemonadeRecipe recipe;
+        public Weather todaysForcast;
+        public Weather todaysTempurature;
+        public Random random;
+        public double pricePerCup;
+
         private Customer customer;
+            // public int dailyAmountOfCustomers = 70;
+
         private List<string> availableItems;
         public string purchaseInventory;
-        public Random random;
 
         // constructor (SPAWNER)
         public Day()
         {
             random = new Random();
-            tomorrowsForcast = new Weather();
-            todaysWeather = new Weather();
+            todaysForcast = new Weather();
+            todaysTempurature = new Weather();
             recipe = new LemonadeRecipe();
         }
 
         // member methods (CAN DO)
-            //the shit we did today for set and grab (setting and getting)
+        public void ActualWeatherCondition()
+        {
+            todaysForcast.ActualWeatherCondition();
+        }
+
+        public void ActualWeatherTemperature()
+        {
+            todaysTempurature.ActualWeatherTemperature();
+        }
+
+        public double PriceOfCup()
+        {
+            Console.WriteLine("Set your lemonade price for the day. Remember the weather should be factored in.");
+            {
+                double pricePerCup = double.Parse(Console.ReadLine());
+                this.pricePerCup = pricePerCup;
+                return this.pricePerCup;
+            }
+        }
     }
 }

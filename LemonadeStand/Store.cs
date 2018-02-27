@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Store // inheritance (IS A TYPE OF)
+    class Store 
     {
         //member variables (HAS A)
         public double priceOf25Cups;

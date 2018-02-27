@@ -8,25 +8,41 @@ namespace LemonadeStand
 {
     class LemonadeRecipe
     {
-
-        //create recipe
-        //set price
-        //how many lemons
-        //hw many ice cubes
-        //how much sugar
-        //how much vodka
-
-            //set recipe
-
+        // menmber variables(HAS)
+        public int numberOfLemonsUsedInRecipe;
+        public int amountOfSugarForRecipe;
+        public int amountOfIceCubesForRecipe;
+    
 
         // constructor (SPAWNER)
         public LemonadeRecipe()
         {
-
+            //set recipe to zero
         }
 
         // member methods (CAN DO)
-    }
-}
+        public void getNumberOfLemonsForRecipe()
+        {
+            Console.WriteLine("How many lemons would you like to use in your recipe?");
 
-// member methods (CAN DO)
+            int numberOfLemonsForRecipe = int.Parse(Console.ReadLine());
+            numberOfLemonsUsedInRecipe = numberOfLemonsForRecipe;
+        }
+
+         public int getamountOfSugarForRecipe()
+        {
+            Console.WriteLine("How many cups of sugar would you like to use in your recipe?");
+
+            int amountOfSugarForRecipe = int.Parse(Console.ReadLine());
+            return this.amountOfSugarForRecipe = amountOfSugarForRecipe;
+        }
+
+        public int getamountOfIceCubesForRecipe()
+        {
+            Console.WriteLine("How many ice cubs would like to put in the cup?");
+
+            int amountOfIceCubesForRecipe = int.Parse(Console.ReadLine());
+            return this.amountOfIceCubesForRecipe = amountOfIceCubesForRecipe;
+        }
+    }
+    }

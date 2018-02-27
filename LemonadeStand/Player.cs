@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    abstract class Player
+    class Player
     {
         // member variables (HAS A) 
         public string GetLemonadesStandName;
-        //public string PurchaseInventory;
-        
         double profit;
         double expenses;
         double income;
@@ -25,19 +23,19 @@ namespace LemonadeStand
         // constructor (SPAWNER)
         public Player()
         {
-        numberOfItemsBought = 0;
-        moneyForStore = 20.00;
-
-        inventory.playersCups = 0;
-        inventory.playersIce = 0;
-        inventory.playersSugar = 0;
-        inventory.playersLemons = 0;
-        }
+            Wallet wallet = new Wallet();
+            Inventory inventory = new Inventory();
+          }
 
         // member methods (CAN DO)
         public void PurchaseInventory()
         {
+            numberOfItemsBought = 0;
 
+ //           inventory.playersCups = 0;
+ //           inventory.playersIce = 0;
+ //           inventory.playersSugar = 0;
+ //           inventory.playersLemons = 0;
         }
         public void DisplayPlayerInventory()
         {

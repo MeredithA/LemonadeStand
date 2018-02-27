@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Customer : Player
+    class Customer
     {
         // member variables (HAS A)
-        public int currentItmsInInventory;
+        
         
 
         // constructor (SPAWNER)
