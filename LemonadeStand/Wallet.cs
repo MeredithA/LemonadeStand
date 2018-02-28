@@ -9,8 +9,8 @@ namespace LemonadeStand
     class Wallet
     {
         // member variables (HAS A)
+
         public double moneyInWallet;
-        bool ValidateFunds;
         double costOfProduct;
         public double totalProfit;
         double DailyFinacialReport;
@@ -24,6 +24,21 @@ namespace LemonadeStand
 
 
         // member methods (CAN DO)
+
+        public void ValidateFunds(double balance, Player player)
+        {
+            if (balance <= moneyInWallet)
+            {
+                moneyInWallet -= balance;
+            }
+            else
+            {
+                Console.WriteLine("You do not have enough money to purchase everything in your cart.");
+            }
+        }
+
+
+
         public void DisplayBalance(Player player)
         {
             Console.WriteLine($"You currently have ${moneyInWallet} in your wallet.");
@@ -62,19 +77,5 @@ namespace LemonadeStand
                 Console.ReadLine();
             }
         }
-
-
-        public bool CheckWallet(double CostOfProduct)
-        {
-            if (moneyInWallet < CostOfProduct)
-            {
-                ValidateFunds = true;
-                Console.WriteLine("You don't have enough money to purchase this item.");
-            }
-            return ValidateFunds;
-        }
-
-
-        // daily debits - daily credits
     }
 }

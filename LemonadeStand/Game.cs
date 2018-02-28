@@ -14,7 +14,7 @@ namespace LemonadeStand
         public Player player;
         public Store store;
         public Day day;
-        public UI ui;
+        // public UI ui;
 
         // constructor ()
         public Game()
@@ -24,16 +24,24 @@ namespace LemonadeStand
             player = new Player();
             store = new Store();
             day = new Day();
-            ui = new UI();
+            // ui = new UI();
         }
         //member methods (CAN DO)
 
-        public void RunGame()
+        public static void DisplayRules()
         {
-            UI.DisplayRules();
-            day.todaysForcast.ActualWeatherCondition();
-            day.todaysTempurature.ActualWeatherTemperature();
-            day.PriceOfCup();
+            Console.WriteLine("Welcome to Lemonade Stand.");
+            Console.WriteLine("Instructions:");
+            Console.WriteLine("Your goal is to make as much money as you can in 7 days.");
+            Console.WriteLine("Buy cups, lemons, sugar and ice cubes. Then set your recipe every day.");
+            Console.WriteLine("Pay close attention to the weather and customer satisfaction.");
+            Console.WriteLine("Please hit [ENTER] to continue.");
+            Console.ReadLine();
+        }
+
+        public void DisplayPlayerInventory()
+        {
+
         }
 
         public void RestartGame()

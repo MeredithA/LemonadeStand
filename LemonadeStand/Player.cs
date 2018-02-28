@@ -10,39 +10,19 @@ namespace LemonadeStand
     {
         // member variables (HAS A) 
         public string GetLemonadesStandName;
-        double profit;
-        double expenses;
-        double income;
-        public double money;
-        public double moneyForStore;
-        public Inventory inventory;
-        private Wallet wallet;
+        public Inventory Inventory;
+        public Wallet wallet;
+        public LemonadeRecipe lemonaderecipe;
         public int numberOfItemsBought;
-
+        public double DeductPurchasedItemsFromWallet;
 
         // constructor (SPAWNER)
         public Player()
         {
             Wallet wallet = new Wallet();
             Inventory inventory = new Inventory();
-          }
+            LemonadeRecipe lemonaderecipe = new LemonadeRecipe();
 
-        // member methods (CAN DO)
-        public void PurchaseInventory()
-        {
-            numberOfItemsBought = 0;
-
- //           inventory.playersCups = 0;
- //           inventory.playersIce = 0;
- //           inventory.playersSugar = 0;
- //           inventory.playersLemons = 0;
-        }
-        public void DisplayPlayerInventory()
-        {
-            Console.WriteLine("Cups: {0}", inventory.playersCups);
-            Console.WriteLine("Ice: {0}", inventory.playersIce);
-            Console.WriteLine("Sugar: {0}", inventory.playersSugar);
-            Console.WriteLine("Lemons: {0}", inventory.playersLemons);
         }
     }
 }

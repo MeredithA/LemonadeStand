@@ -47,9 +47,9 @@ namespace LemonadeStand
         }
 
         //member methods
-        public void DisplayingStoreInfo()
+        public void DisplayCurrentInventory()
         {
-            Console.WriteLine("Welcome to your local store! Please select one of the following items to purchase.");
+            
         }
 
         public void SelectTypeOfItem()
@@ -88,6 +88,7 @@ namespace LemonadeStand
             }
 
         }
+
         public double ChoosingLemons(Player player)
         {
             Console.WriteLine("Would you like to by 10, 30 or 75 lemons?");
@@ -213,26 +214,26 @@ namespace LemonadeStand
             return cost;
         }
 
-        public string purchaseMoreItems (Player player)
-        {
+        //    public string purchaseMoreItems (Player player)
+        //    {
 
-            Console.WriteLine("Do you need any other items? Type 'yes' or 'no'.");
-            string purchaseMoreItems = Console.ReadLine();
+        //        Console.WriteLine("Do you need any other items? Type 'yes' or 'no'.");
+        //        string purchaseMoreItems = Console.ReadLine();
 
-            switch (purchaseMoreItems)
-            {
-                case "yes":
-                    Console.WriteLine("What item do you need more of?");
-                    break;
-                case "no":
-                    Console.WriteLine("Your total inventory is:");
-                    inventory.displayInventory();
-                    break;
-                default:
-                    Console.WriteLine("Invalid entery.");
-                    break;
-            }
-        }
+        //        switch (purchaseMoreItems)
+        //        {
+        //            case "yes":
+        //                Console.WriteLine("What item do you need more of?");
+        //                break;
+        //            case "no":
+        //                Console.WriteLine("Your total inventory is:");
+        //                inventory.displayInventory();
+        //                break;
+        //            default:
+        //                Console.WriteLine("Invalid entery.");
+        //                break;
+        //        }
+        //}
     }
 }
 

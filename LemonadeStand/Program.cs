@@ -11,5 +11,12 @@ namespace LemonadeStand
         static void Main(string[] args)
         {
         }
+        public void RunGame()
+        {
+            day.weather.todaysForcast.ActualWeatherCondition();
+            day.todaysTempurature.ActualWeatherTemperature();
+            day.PriceOfCup();
+        }
+
     }
 }
