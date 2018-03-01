@@ -11,7 +11,7 @@ namespace LemonadeStand
         // member variables (HAS A)
 
         public double moneyInWallet;
-        double costOfProduct;
+        double numberOfItemsBought;
         public double totalProfit;
         double DailyFinacialReport;
 
@@ -37,14 +37,12 @@ namespace LemonadeStand
             }
         }
 
-
-
         public void DisplayBalance(Player player)
         {
             Console.WriteLine($"You currently have ${moneyInWallet} in your wallet.");
         }
 
-        public void CalculateEndOfDayProfitOrLoss()
+        public void CalculateEndOfDayProfitOrLoss(Player player)
         {
             double dailyProfitOrLoss;
             double startingAmount = 20;
@@ -63,7 +61,7 @@ namespace LemonadeStand
             totalProfit += dailyProfitOrLoss;
         }
 
-        public void DisplayEndOfWeekProfitOrLoss()
+        public void DisplayEndOfWeekProfitOrLoss(Player player)
         {
             if (totalProfit > 0)
             {

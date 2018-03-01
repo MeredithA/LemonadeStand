@@ -10,13 +10,10 @@ namespace LemonadeStand
     {
         static void Main(string[] args)
         {
+            Game game = new Game();
+            game.RunGame();
         }
-        public void RunGame()
-        {
-            day.weather.todaysForcast.ActualWeatherCondition();
-            day.todaysTempurature.ActualWeatherTemperature();
-            day.PriceOfCup();
-        }
+
 
     }
 }

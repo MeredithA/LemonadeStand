@@ -10,8 +10,6 @@ namespace LemonadeStand
     {
 
         // member variables (HAS A) 
-        public Inventory
-        {
         public List<Lemon> amountOfLemonsInPlayersInventoy;
         public List<Sugar> amountOfSugarInPlayersInventoy;
         public List<Ice> amountOfIceInPlayersInventoy;

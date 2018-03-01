@@ -6,55 +6,39 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Weather
+    public class Weather
     {
         // member variables (HAS A)
-        public string actualWeathercondition;
-        public int todaysWeatherTemperature;
-        public List<string> weatherConditionPossibilities;
-        public List<int> weatherTempuraturePossibilities;
+        public int actualWeatherTemperture;
+        public string actualWeatherCondition;
+        public List<string> possibleWeatherConditions;
+        public List<int> possibleWeatherTemperature;
         public Random random;
 
         // constructor (SPAWNER)
         public Weather()
         {
-            weatherConditionPossibilities = new List<string>() { "sunny", "partly cloudy", "rain", "cloudy", "hazy" };
-            weatherTempuraturePossibilities = new List<int>() { 87, 75, 66, 50, 67, 91 };
+            possibleWeatherConditions = new List<string>() { "sunny", "partly cloudy", "rain", "cloudy", "hazy" };
+            possibleWeatherTemperature = new List<int>() { 87, 75, 66, 50, 67, 91 };
             random = new Random();
         }
 
         // member methods (CAN DO)
-        public int actualTempurature()
-        {
-            int todaysTempurature;
-
-            todaysTempurature = random.Next(0, weatherConditionPossibilities.Count);
-            return weatherTempuraturePossibilities[todaysTempurature];
-        }
-
         public string ActualWeatherCondition()
         {
-            int todaysForcast;
+            int actualWeatherCondition;
 
-            todaysForcast = random.Next(0, weatherConditionPossibilities.Count);
-            return weatherConditionPossibilities[todaysForcast];
+            actualWeatherCondition = random.Next(0, possibleWeatherConditions.Count);
+            return possibleWeatherConditions[actualWeatherCondition];
+
         }
 
-        public int ActualWeatherTemperature()
+        public int ActualWeatherTemperture()
         {
-            int todaysTempuratureIndexValue;
+            int actualWeatherTemperture;
 
-            todaysTempuratureIndexValue = random.Next(0, weatherTempuraturePossibilities.Count);
-            return weatherTempuraturePossibilities[todaysTempuratureIndexValue];
-        }
-
-        public string ActualWeatherForecast()
-        {
-            int actualForcastIndexValue;
-
-            actualForcastIndexValue = random.Next(0, weatherConditionPossibilities.Count);
-            return weatherConditionPossibilities[actualForcastIndexValue];
-
+            actualWeatherTemperture = random.Next(0, possibleWeatherTemperature.Count);
+            return possibleWeatherTemperature[actualWeatherTemperture];
         }
     }
 }

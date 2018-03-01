@@ -47,12 +47,7 @@ namespace LemonadeStand
         }
 
         //member methods
-        public void DisplayCurrentInventory()
-        {
-            
-        }
-
-        public void SelectTypeOfItem()
+        public void SelectTypeOfItem(Player player)
         {
             Console.WriteLine("If you need lemons, type 'lemons'.");
             Console.WriteLine("If you need cups, type 'cups'.");
@@ -100,17 +95,16 @@ namespace LemonadeStand
             {
                 case "10":
                     Console.WriteLine("You bought 10 lemons.");
-                    player.numberOfItemsBought = 10;
-                    cost = priceOf10Lemons;
+                    player.inventory.AddLemonToInventory(10);
                     break;
                 case "30":
                     Console.WriteLine("You bought 30 lemons.");
-                    player.numberOfItemsBought = 30;
+                    player.inventory.AddLemonToInventory(30);
                     cost = priceOf30Lemons;
                     break;
                 case "75":
                     Console.WriteLine("You bought 75 lemons.");
-                    player.numberOfItemsBought = 75;
+                    player.inventory.AddLemonToInventory(75);
                     cost = priceOf75Lemons;
                     break;
                 default:
@@ -131,17 +125,17 @@ namespace LemonadeStand
             {
                 case "25":
                     Console.WriteLine("You bought 25 cups.");
-                    player.numberOfItemsBought = 25;
+                    player.inventory.AddCupToInventory(25);
                     cost = priceOf25Cups;
                     break;
                 case "50":
                     Console.WriteLine("You bought 50 cups.");
-                    player.numberOfItemsBought = 50;
+                    player.inventory.AddCupToInventory(50);
                     cost = priceOf50Cups;
                     break;
                 case "100":
                     Console.WriteLine("You bought 100 cups.");
-                    player.numberOfItemsBought = 100;
+                    player.inventory.AddCupToInventory(100);
                     cost = priceOf100Cups;
                     break;
                 default:
@@ -163,17 +157,17 @@ namespace LemonadeStand
             {
                 case "8":
                     Console.WriteLine("You bought 8 cups of sugar.");
-                    player.numberOfItemsBought = 8;
+                    player.inventory.AddSugarToInventory(8);
                     cost = priceOf8CupsOfSugar;
                     break;
                 case "20":
                     Console.WriteLine("You bought 20 cups of sugar.");
-                    player.numberOfItemsBought = 20;
+                    player.inventory.AddSugarToInventory(20);
                     cost = priceOf20CupsOfSugar;
                     break;
                 case "48":
                     Console.WriteLine("You bought 48 cups of sugar.");
-                    player.numberOfItemsBought = 48;
+                    player.inventory.AddSugarToInventory(48);
                     cost = priceOf48CupsOfSugar;
                     break;
                 default:
@@ -194,17 +188,17 @@ namespace LemonadeStand
             {
                 case "100":
                     Console.WriteLine("You bought 100 ice cubes.");
-                    player.numberOfItemsBought = 100;
+                    player.inventory.AddIceToInventory(100);
                     cost = priceOf100IceCubes;
                     break;
                 case "250":
                     Console.WriteLine("You bought 200 ice cubes.");
-                    player.numberOfItemsBought = 200;
+                    player.inventory.AddIceToInventory(200);
                     cost = priceOf200IceCubes;
                     break;
                 case "500":
                     Console.WriteLine("You bought 500 ice cubes.");
-                    player.numberOfItemsBought = 300;
+                    player.inventory.AddIceToInventory(500);
                     cost = priceOf300IceCubes;
                     break;
                 default:

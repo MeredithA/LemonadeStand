@@ -9,36 +9,30 @@ namespace LemonadeStand
     class Day
     {
         // member variables (HAS A)
-        LemonadeRecipe recipe;
-        public Weather todaysForcast;
-        public Weather todaysTempurature;
-        public Random random;
+        public LemonadeRecipe lemonadeRecipe;
+        public Weather weather;
         public double pricePerCup;
 
-        private Customer customer;
+      //  private Customer customer;
             // public int dailyAmountOfCustomers = 70;
-
-        private List<string> availableItems;
-        public string purchaseInventory;
 
         // constructor (SPAWNER)
         public Day()
         {
-            random = new Random();
-            todaysForcast = new Weather();
-            todaysTempurature = new Weather();
-            recipe = new LemonadeRecipe();
+            Weather weather = new Weather();
+            LemonadeRecipe lemonadeRecipe = new LemonadeRecipe();
         }
 
-        // member methods (CAN DO)
+        //member methods (CAN DO)
+
         public void ActualWeatherCondition()
         {
-            todaysForcast.ActualWeatherCondition();
+            weather.ActualWeatherCondition();
         }
 
-        public void ActualWeatherTemperature()
+        public void ActualWeatherTemperture()
         {
-            todaysTempurature.ActualWeatherTemperature();
+            weather.ActualWeatherTemperture();
         }
 
         public double PriceOfCup()
@@ -50,5 +44,7 @@ namespace LemonadeStand
                 return this.pricePerCup;
             }
         }
+
+
     }
 }

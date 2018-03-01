@@ -12,16 +12,20 @@ namespace LemonadeStand
         public int numberOfLemonsUsedInRecipe;
         public int amountOfSugarForRecipe;
         public int amountOfIceCubesForRecipe;
+        public int amountOfCupsUsed;
     
 
         // constructor (SPAWNER)
         public LemonadeRecipe()
         {
-            //set recipe to zero
+        numberOfLemonsUsedInRecipe = 0;
+        amountOfSugarForRecipe = 0;
+        amountOfIceCubesForRecipe = 0;
+        amountOfCupsUsed = 0;
         }
 
         // member methods (CAN DO)
-        public void getNumberOfLemonsForRecipe()
+        public void GetNumberOfLemonsForRecipe(Day day)
         {
             Console.WriteLine("How many lemons would you like to use in your recipe?");
 
@@ -29,7 +33,7 @@ namespace LemonadeStand
             numberOfLemonsUsedInRecipe = numberOfLemonsForRecipe;
         }
 
-         public int getamountOfSugarForRecipe()
+         public int GetAmountOfSugarForRecipe(Day day)
         {
             Console.WriteLine("How many cups of sugar would you like to use in your recipe?");
 
@@ -37,12 +41,17 @@ namespace LemonadeStand
             return this.amountOfSugarForRecipe = amountOfSugarForRecipe;
         }
 
-        public int getamountOfIceCubesForRecipe()
+        public int GetAmountOfIceCubesForRecipe(Day day)
         {
             Console.WriteLine("How many ice cubs would like to put in the cup?");
 
             int amountOfIceCubesForRecipe = int.Parse(Console.ReadLine());
             return this.amountOfIceCubesForRecipe = amountOfIceCubesForRecipe;
         }
+
+        //public int GetAmountOfCupsUsed()
+        //{ 
+        
+        //}
     }
     }
