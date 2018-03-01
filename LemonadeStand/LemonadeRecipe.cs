@@ -49,7 +49,7 @@ namespace LemonadeStand
             return this.amountOfIceCubesForRecipe = amountOfIceCubesForRecipe;
         }
 
-        //public int GetAmountOfCupsUsed()
+        //public int GetAmountOfCupsUsed(Day day)
         //{ 
         
         //}

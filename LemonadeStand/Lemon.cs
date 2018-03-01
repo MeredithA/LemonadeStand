@@ -16,12 +16,7 @@ class Lemon : Item
     public Lemon()
     {
     }
-
-
-
-
     // member methods (CAN DO)
-    //        protected virtual double GetPriceOfItem()
 
     }
 }

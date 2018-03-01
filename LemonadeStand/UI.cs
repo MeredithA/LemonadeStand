@@ -26,8 +26,10 @@ namespace LemonadeStand
 
         //public void DisplayPlayerInventory()
         //{
-
         //}
+
+        //public void DailyProfit
+        //public void EndOfGameProfit()
 
 
 

@@ -14,6 +14,10 @@ namespace LemonadeStand
         public List<Sugar> amountOfSugarInPlayersInventoy;
         public List<Ice> amountOfIceInPlayersInventoy;
         public List<Cup> amountOfCupsInPlayersInventoy;
+        List<Item> lemon;
+        List<Item> sugar;
+        List<Item> ice;
+        List<Item> cup;
 
         // constructor (SPAWNER)
         public Inventory()
@@ -29,6 +33,7 @@ namespace LemonadeStand
         {
             for (int i = 0; i < Number; i++)
             {
+                //public void ValidateFunds(Player player, Wallet wallet);
                 Lemon lemon = new Lemon();
                 amountOfLemonsInPlayersInventoy.Add(lemon);
             }

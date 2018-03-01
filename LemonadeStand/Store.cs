@@ -47,6 +47,11 @@ namespace LemonadeStand
         }
 
         //member methods
+        public void DisplayInventory()
+        {
+            
+        }
+
         public void SelectTypeOfItem(Player player)
         {
             Console.WriteLine("If you need lemons, type 'lemons'.");
@@ -96,6 +101,7 @@ namespace LemonadeStand
                 case "10":
                     Console.WriteLine("You bought 10 lemons.");
                     player.inventory.AddLemonToInventory(10);
+                    //subtract from wallet;
                     break;
                 case "30":
                     Console.WriteLine("You bought 30 lemons.");
@@ -126,16 +132,19 @@ namespace LemonadeStand
                 case "25":
                     Console.WriteLine("You bought 25 cups.");
                     player.inventory.AddCupToInventory(25);
+                    //subtract from wallet;
                     cost = priceOf25Cups;
                     break;
                 case "50":
                     Console.WriteLine("You bought 50 cups.");
                     player.inventory.AddCupToInventory(50);
+                    //subtract from wallet;
                     cost = priceOf50Cups;
                     break;
                 case "100":
                     Console.WriteLine("You bought 100 cups.");
                     player.inventory.AddCupToInventory(100);
+                    //subtract from wallet;
                     cost = priceOf100Cups;
                     break;
                 default:
@@ -158,16 +167,19 @@ namespace LemonadeStand
                 case "8":
                     Console.WriteLine("You bought 8 cups of sugar.");
                     player.inventory.AddSugarToInventory(8);
+                    //subtract from wallet;
                     cost = priceOf8CupsOfSugar;
                     break;
                 case "20":
                     Console.WriteLine("You bought 20 cups of sugar.");
                     player.inventory.AddSugarToInventory(20);
+                    //subtract from wallet;
                     cost = priceOf20CupsOfSugar;
                     break;
                 case "48":
                     Console.WriteLine("You bought 48 cups of sugar.");
                     player.inventory.AddSugarToInventory(48);
+                    //subtract from wallet;
                     cost = priceOf48CupsOfSugar;
                     break;
                 default:
@@ -189,17 +201,19 @@ namespace LemonadeStand
                 case "100":
                     Console.WriteLine("You bought 100 ice cubes.");
                     player.inventory.AddIceToInventory(100);
+                    //subtract from wallet;
                     cost = priceOf100IceCubes;
                     break;
                 case "250":
                     Console.WriteLine("You bought 200 ice cubes.");
                     player.inventory.AddIceToInventory(200);
+                    //subtract from wallet;
                     cost = priceOf200IceCubes;
                     break;
                 case "500":
                     Console.WriteLine("You bought 500 ice cubes.");
                     player.inventory.AddIceToInventory(500);
-                    cost = priceOf300IceCubes;
+                    //subtract from wallet;
                     break;
                 default:
                     Console.WriteLine("You have entered an invalid quantity.");
@@ -207,6 +221,9 @@ namespace LemonadeStand
             }
             return cost;
         }
+
+
+
 
         //    public string purchaseMoreItems (Player player)
         //    {

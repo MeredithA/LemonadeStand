@@ -9,17 +9,15 @@ namespace LemonadeStand
     class Wallet
     {
         // member variables (HAS A)
-
         public double moneyInWallet;
-        double numberOfItemsBought;
-        public double totalProfit;
-        double DailyFinacialReport;
+        public bool validateFunds;
+        public double totalProfit; //pretty sure this should be in the UI
+
 
         // constructor (SPAWNER)
         public Wallet()
         {
             moneyInWallet = 20.00;
-            totalProfit = 0;
         }
 
 
